@@ -6,41 +6,42 @@
 
 package SmartNurse;
 import java.util.HashMap;
+import java.util.Date;
 /**
  *
  * @author nuwan_rates
  */
-public class validDay {
-   private int validDayId;
-   
-   private HashMap <String,validShift> validDay=new HashMap<String,validShift>();
+public class InValidDay {
+   private int inValidDayId;
+   private Date inValidDay;
 
     /**
      * @return the validDayId
      */
     public int getValidDayId() {
-        return validDayId;
+        return inValidDayId;
     }
 
     /**
      * @param validDayId the validDayId to set
      */
     public void setValidDayId(int validDayId) {
-        this.validDayId = validDayId;
+        this.inValidDayId = validDayId;
     }
 
     /**
-     * @return the validDay
+     * @return the inValidDay
      */
-    public HashMap <String,validShift> getValidDay() {
-        return validDay;
+    public Date getInValidDay() {
+        return inValidDay;
     }
 
     /**
-     * @param validDay the validDay to set
+     * @param inValidDay the inValidDay to set
      */
-    public void setValidDay(HashMap <String,validShift> validDay) {
-        this.validDay = validDay;
+    public void setInValidDay(Date inValidDay) {
+        this.inValidDay = inValidDay;
     }
-   
+
+    
  }

@@ -11,14 +11,18 @@ import java.util.Date;
  * @author nuwan_rates
  */
 public class Employee {
+    
+    // /////Persistent fields///////
     private int employeeId;
     private String empName;
     private String address;
     private String nic;
     private Date DOB;
-    private Skills skill;
-    private validDay validDay;
-    private validShift validShift;
+    private String skill;
+    
+    // Joined Fields /////
+    private InValidDay inValidDay;
+    private InValidShift inValidShift;
 
     /**
      * @return the employeeId
@@ -93,43 +97,43 @@ public class Employee {
     /**
      * @return the skill
      */
-    public Skills getSkill() {
+    public String getSkill() {
         return skill;
     }
 
     /**
      * @param skill the skill to set
      */
-    public void setSkill(Skills skill) {
+    public void setSkill(String skill) {
         this.skill = skill;
     }
 
     /**
-     * @return the validDay
+     * @return the ValidDay
      */
-    public validDay getValidDay() {
-        return validDay;
+    public InValidDay getValidDay() {
+        return inValidDay;
     }
 
     /**
-     * @param validDay the validDay to set
+     * @param validDay the ValidDay to set
      */
-    public void setValidDay(validDay validDay) {
-        this.validDay = validDay;
+    public void setValidDay(InValidDay inValidDay) {
+        this.inValidDay = inValidDay;
     }
 
     /**
      * @return the validShift
      */
-    public validShift getValidShift() {
-        return validShift;
+    public InValidShift getValidShift() {
+        return inValidShift;
     }
 
     /**
      * @param validShift the validShift to set
      */
-    public void setValidShift(validShift validShift) {
-        this.validShift = validShift;
+    public void setValidShift(InValidShift validShift) {
+        this.inValidShift = validShift;
     }
              
 }
