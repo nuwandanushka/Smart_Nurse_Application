@@ -18,12 +18,14 @@ public class Employee {
     private String address;
     private String nic;
     private Date DOB;
-    private String skill;
-    
+    private int skillId;
+    private double hourseOfWorkInMonth;
     // Joined Fields /////
+    private Skill skill;
     private InValidDay inValidDay;
     private InValidShift inValidShift;
 
+    // getter Setters
     /**
      * @return the employeeId
      */
@@ -97,14 +99,14 @@ public class Employee {
     /**
      * @return the skill
      */
-    public String getSkill() {
+    public Skill getSkill() {
         return skill;
     }
 
     /**
      * @param skill the skill to set
      */
-    public void setSkill(String skill) {
+    public void setSkill(Skill skill) {
         this.skill = skill;
     }
 
@@ -134,6 +136,34 @@ public class Employee {
      */
     public void setValidShift(InValidShift validShift) {
         this.inValidShift = validShift;
+    }
+
+    /**
+     * @return the skillId
+     */
+    public int getSkillId() {
+        return skillId;
+    }
+
+    /**
+     * @param skillId the skillId to set
+     */
+    public void setSkillId(int skillId) {
+        this.skillId = skillId;
+    }
+
+    /**
+     * @return the hourseOfWorkInMonth
+     */
+    public double getHourseOfWorkInMonth() {
+        return hourseOfWorkInMonth;
+    }
+
+    /**
+     * @param hourseOfWorkInMonth the hourseOfWorkInMonth to set
+     */
+    public void setHourseOfWorkInMonth(double hourseOfWorkInMonth) {
+        this.hourseOfWorkInMonth = hourseOfWorkInMonth;
     }
              
 }
