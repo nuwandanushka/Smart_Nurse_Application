@@ -30,8 +30,8 @@ public class LoginInterface extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jTextField2 = new javax.swing.JTextField();
+        password = new javax.swing.JPasswordField();
+        uname = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         LClose = new javax.swing.JLabel();
@@ -44,12 +44,17 @@ public class LoginInterface extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setText("Submit");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, -1, -1));
 
         jButton2.setText("Cancle");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, -1, -1));
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 210, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 210, -1));
+        getContentPane().add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 210, -1));
+        getContentPane().add(uname, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 210, -1));
 
         jLabel4.setText("User Name :");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, -1, -1));
@@ -75,6 +80,11 @@ public class LoginInterface extends javax.swing.JFrame {
     private void LCloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LCloseMouseClicked
         System.exit(0);
     }//GEN-LAST:event_LCloseMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        User user=new User();
+        user.validation(uname, password);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,7 +128,7 @@ public class LoginInterface extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JPasswordField password;
+    private javax.swing.JTextField uname;
     // End of variables declaration//GEN-END:variables
 }

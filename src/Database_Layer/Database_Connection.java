@@ -25,11 +25,11 @@ public class Database_Connection {
     String url;
     String username;
     String Password;
-    private Database_Connection()
-    {try
+    private Database_Connection(){
+    try
         {
             drivers  = "sun.jdbc.odbc.JdbcOdbcDriver";
-            url      = "jdbc:odbc:Smart_Nurse_Application";
+            url      = "jdbc:odbc:Smart_Nurse";
             username = "NuwanSQL";
             Password = "Software";
             Class.forName(drivers);
