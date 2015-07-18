@@ -21,7 +21,7 @@ public class LoginTest {
         JTextField username=new JTextField();
         username.setText("Nuwan");
         JPasswordField password=new JPasswordField();
-        password.setText("111");
+        password.setText("123");
         User user=new User();
         user.validation(username, password);
         String name=user.getName();
