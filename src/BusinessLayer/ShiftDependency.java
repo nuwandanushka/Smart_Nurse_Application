@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 
-package SmartNurse;
+package BusinessLayer;
+
+import SmartNurse.HardConstraint;
 
 /**
  *
