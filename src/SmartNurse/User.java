@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
+import javax.swing.JPanel;
 /**
  *
  * @author nuwan_rates
@@ -94,9 +95,9 @@ public class User {
     public void setStatus(String Status) {
         this.Status = Status;
     }
-   public void validation(JTextField username, JPasswordField password ){
+   public void validation(JTextField username, JPasswordField password){
     
-       String sql="Select * from USERS WHERE USERNAME='"+username.getText()+"' and PASSWORD='"+ password.getText()+"'";
+       String sql="{call GetUser('"+username.getText()+"' , '"+password.getText()+"' )}";
        Database_Connection db=Database_Connection.GetInstance();
        ResultSet re=db.getData(sql);
        
@@ -107,6 +108,13 @@ public class User {
               JOptionPane.showMessageDialog(null, "Thank you" );
               MDIForm admin=new MDIForm();
               new MDIForm().setVisible(true);
+              setName(re.getString("FNAME"));
+              String authority=re.getString("AUTHORITY");
+              
+              if(authority.contains("ADMIN")){
+                  admin.jTabbedPane1.setEnabledAt(0, false);
+                  MDIForm.ulable.setText(getName()+", Smart Nurse");
+              }
               
           }
           else 
