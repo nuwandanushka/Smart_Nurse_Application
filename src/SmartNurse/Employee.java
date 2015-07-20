@@ -20,6 +20,7 @@ public class Employee {
     private Date DOB;
     private int skillId;
     private double hourseOfWorkInMonth;
+    private String wardName;
     // Joined Fields /////
     private Skill skill;
     private InValidDay inValidDay;
@@ -164,6 +165,20 @@ public class Employee {
      */
     public void setHourseOfWorkInMonth(double hourseOfWorkInMonth) {
         this.hourseOfWorkInMonth = hourseOfWorkInMonth;
+    }
+
+    /**
+     * @return the wardName
+     */
+    public String getWardName() {
+        return wardName;
+    }
+
+    /**
+     * @param wardName the wardName to set
+     */
+    public void setWardName(String wardName) {
+        this.wardName = wardName;
     }
              
 }
