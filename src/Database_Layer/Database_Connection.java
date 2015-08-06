@@ -90,5 +90,9 @@ public class Database_Connection {
         }
           return rs;
     }
+    
+    public static void closeConnection() throws SQLException{
+        dbCon.close();
+    }
    
 }

@@ -125,7 +125,13 @@ public class User {
       catch (SQLException ex) 
       {
           Logger.getLogger(User.class.getName()).log(Level.SEVERE, null, ex);
-      }
+      }finally{
+           try {
+               Database_Connection.closeConnection();
+           } catch (SQLException ex) {
+               Logger.getLogger(User.class.getName()).log(Level.SEVERE, null, ex);
+           }
+       }
     
        
        
