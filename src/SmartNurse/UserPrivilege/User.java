@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package SmartNurse;
+package SmartNurse.UserPrivilege;
 
+import UI.MDIForm;
 import Database_Layer.Database_Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;

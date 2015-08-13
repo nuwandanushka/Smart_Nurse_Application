@@ -4,19 +4,20 @@
  * and open the template in the editor.
  */
 
-package BusinessLayer;
+package SmartNurse;
 
 /**
  *
  * @author nuwan_rates
  */
 public class Ward {
+    
     private int wardId;
     private String wardName;
 
-    public Ward(int Id, String wName){
-        this.wardId=Id;
-        this.wardName=wName;
+    public Ward(int id, String name){
+        this.wardId=id;
+        this.wardName=name;
     }
     /**
      * @return the wardId
@@ -25,10 +26,13 @@ public class Ward {
         return wardId;
     }
 
+
     /**
      * @return the wardName
      */
     public String getWardName() {
         return wardName;
     }
+
+
 }

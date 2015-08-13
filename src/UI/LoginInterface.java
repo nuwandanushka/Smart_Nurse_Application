@@ -4,10 +4,14 @@
  * and open the template in the editor.
  */
 
-package SmartNurse;
+package UI;
+
+import SmartNurse.UserPrivilege.User;
 
 /**
  *
+
+import SmartNurse.User;
  * @author nuwan_rates
  */
 public class LoginInterface extends javax.swing.JFrame {
@@ -40,7 +44,6 @@ public class LoginInterface extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(982, 332));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(982, 332));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setText("Submit");

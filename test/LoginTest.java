@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import SmartNurse.User;
+import SmartNurse.UserPrivilege.User;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import org.junit.Test;
@@ -26,5 +26,7 @@ public class LoginTest {
         user.validation(username, password);
         String name=user.getName();
         assertEquals(name, "Nuwan Danushka");
+        assertNotNull("user name shouldn't be null", username);
+        assertNotNull("password name shouldn't be null", password);
     }
 }
