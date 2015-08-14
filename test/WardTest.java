@@ -38,7 +38,8 @@ public class WardTest {
     public void wardDelete() {
        
         AdminUser admin=new AdminUser();
-        admin.DeleteWard(1); 
+        String id=String.valueOf(1);
+        admin.DeleteWard(id); 
     }
     
 }

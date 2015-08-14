@@ -18,7 +18,7 @@ public class Employee {
     private String address;
     private String nic;
     private Date DOB;
-    private int skillId;
+    private String skillType;
     private double hourseOfWorkInMonth;
     private String wardName;
     // Joined Fields /////
@@ -30,6 +30,16 @@ public class Employee {
     /**
      * @return the employeeId
      */
+    public Employee(int id, String name, String address, String nic, Date dob, String sType, double hours, String ward){
+        this.employeeId=id;
+        this.empName=name;
+        this.address=address;
+        this.nic=nic;
+        this.DOB=dob;
+        this.skillType=sType;
+        this.hourseOfWorkInMonth=hours;
+        this.wardName=ward;
+    }
     public int getEmployeeId() {
         return employeeId;
     }
@@ -142,15 +152,15 @@ public class Employee {
     /**
      * @return the skillId
      */
-    public int getSkillId() {
-        return skillId;
+    public String getSkillType() {
+        return skillType;
     }
 
     /**
      * @param skillId the skillId to set
      */
-    public void setSkillId(int skillId) {
-        this.skillId = skillId;
+    public void setSkillType(String skillId) {
+        this.skillType = skillId;
     }
 
     /**
