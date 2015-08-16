@@ -83,13 +83,13 @@ public class AdminUser {
     }
     
     public void addNurse(Employee nurse){
-        
+       SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy");
        String sql="{call NurseAdding('"+nurse.getEmployeeId()
                +"' , '"+nurse.getEmpName()
                +"' , '"+nurse.getNic()
                +"' , '"+nurse.getAddress()
                +"' , '"+nurse.getSkillType()
-               +"' , '"+nurse.getDOB()
+               +"' , '"+df.format(nurse.getDOB())
                +"' , '"+nurse.getHourseOfWorkInMonth()
                +"' , '"+nurse.getWardName()
                +"')}";

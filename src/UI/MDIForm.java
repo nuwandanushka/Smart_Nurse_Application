@@ -242,6 +242,7 @@ public class MDIForm extends javax.swing.JFrame {
 
         jLabel4.setText("DOB :");
 
+        nursedob.setDateFormatString("MM/dd/yyyy");
         nursedob.setMaxSelectableDate(new java.util.Date(253370748708000L));
         nursedob.setMinSelectableDate(new java.util.Date(-62135785692000L));
 
@@ -1162,7 +1163,7 @@ public class MDIForm extends javax.swing.JFrame {
 
     private void nurseAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nurseAddActionPerformed
         Employee employee=new Employee(Integer.parseInt(nurseid.getText()),nursename.getText(), address.getText(), nursenic.getText()
-                , nursedob.getDate(), (String)skillcombo.getSelectedItem(), Double.parseDouble(nursehrs.getText()), (String)wardNames.getSelectedItem());
+                , nursedob.getDate(), (String)skillcombo.getSelectedItem(), Integer.parseInt(nursehrs.getText()), (String)wardNames.getSelectedItem());
         AdminUser admin=new AdminUser();
         admin.addNurse(employee);
     }//GEN-LAST:event_nurseAddActionPerformed

@@ -19,7 +19,7 @@ public class Employee {
     private String nic;
     private Date DOB;
     private String skillType;
-    private double hourseOfWorkInMonth;
+    private int hourseOfWorkInMonth;
     private String wardName;
     // Joined Fields /////
     private Skill skill;
@@ -30,7 +30,7 @@ public class Employee {
     /**
      * @return the employeeId
      */
-    public Employee(int id, String name, String address, String nic, Date dob, String sType, double hours, String ward){
+    public Employee(int id, String name, String address, String nic, Date dob, String sType, int hours, String ward){
         this.employeeId=id;
         this.empName=name;
         this.address=address;
@@ -166,14 +166,14 @@ public class Employee {
     /**
      * @return the hourseOfWorkInMonth
      */
-    public double getHourseOfWorkInMonth() {
+    public int getHourseOfWorkInMonth() {
         return hourseOfWorkInMonth;
     }
 
     /**
      * @param hourseOfWorkInMonth the hourseOfWorkInMonth to set
      */
-    public void setHourseOfWorkInMonth(double hourseOfWorkInMonth) {
+    public void setHourseOfWorkInMonth(int hourseOfWorkInMonth) {
         this.hourseOfWorkInMonth = hourseOfWorkInMonth;
     }
 
