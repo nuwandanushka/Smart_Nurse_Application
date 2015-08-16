@@ -83,17 +83,17 @@ public class MDIForm extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         shiftcomment = new javax.swing.JTextArea();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
+        shift_Add = new javax.swing.JButton();
+        shift_update = new javax.swing.JButton();
+        shift_delete = new javax.swing.JButton();
+        shift_reset = new javax.swing.JButton();
+        shift_search = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
+        req_Add = new javax.swing.JButton();
+        req_Update = new javax.swing.JButton();
+        req_Delete = new javax.swing.JButton();
+        req_Search = new javax.swing.JButton();
+        req_reset = new javax.swing.JButton();
         jLabel22 = new javax.swing.JLabel();
         requestType = new javax.swing.JComboBox();
         jLabel23 = new javax.swing.JLabel();
@@ -105,35 +105,39 @@ public class MDIForm extends javax.swing.JFrame {
         jLabel36 = new javax.swing.JLabel();
         requestWard = new javax.swing.JComboBox();
         jPanel7 = new javax.swing.JPanel();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
+        con_Add = new javax.swing.JButton();
+        con_update = new javax.swing.JButton();
+        con_delete = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jTextField8 = new javax.swing.JTextField();
+        con_search = new javax.swing.JButton();
+        con_reset = new javax.swing.JButton();
+        previous = new javax.swing.JTextField();
         jLabel27 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        next = new javax.swing.JTextField();
         jPanel8 = new javax.swing.JPanel();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
+        IS_add = new javax.swing.JButton();
+        IS_update = new javax.swing.JButton();
+        IS_delete = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jTextField10 = new javax.swing.JTextField();
+        IS_search = new javax.swing.JButton();
+        IS_Reset = new javax.swing.JButton();
+        IS_nurseId = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox();
+        IS_shift = new javax.swing.JComboBox();
+        jLabel37 = new javax.swing.JLabel();
+        IS_ward = new javax.swing.JComboBox();
         jPanel9 = new javax.swing.JPanel();
-        jButton28 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
-        jButton30 = new javax.swing.JButton();
-        jButton31 = new javax.swing.JButton();
-        jButton32 = new javax.swing.JButton();
+        ID_Add = new javax.swing.JButton();
+        ID_Update = new javax.swing.JButton();
+        ID_Delete = new javax.swing.JButton();
+        ID_Search = new javax.swing.JButton();
+        ID_Reset = new javax.swing.JButton();
         jLabel30 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
+        ID_nurseId = new javax.swing.JTextField();
         jLabel31 = new javax.swing.JLabel();
-        jDateChooser5 = new com.toedter.calendar.JDateChooser();
+        ID_date = new com.toedter.calendar.JDateChooser();
+        jLabel38 = new javax.swing.JLabel();
+        ID_ward = new javax.swing.JComboBox();
         jPanel10 = new javax.swing.JPanel();
         wardAdd = new javax.swing.JButton();
         wardUpdate = new javax.swing.JButton();
@@ -158,13 +162,13 @@ public class MDIForm extends javax.swing.JFrame {
         skillType = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox();
+        staffShitName = new javax.swing.JComboBox();
         jLabel33 = new javax.swing.JLabel();
-        jComboBox7 = new javax.swing.JComboBox();
+        staffWard = new javax.swing.JComboBox();
         jLabel34 = new javax.swing.JLabel();
-        jComboBox8 = new javax.swing.JComboBox();
+        staffSkill = new javax.swing.JComboBox();
         jLabel35 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        staffMin = new javax.swing.JTextField();
         jButton34 = new javax.swing.JButton();
         jButton35 = new javax.swing.JButton();
         jButton36 = new javax.swing.JButton();
@@ -175,12 +179,13 @@ public class MDIForm extends javax.swing.JFrame {
         jScrollPane6 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jLabel19 = new javax.swing.JLabel();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
+        startdate = new com.toedter.calendar.JDateChooser();
         jLabel20 = new javax.swing.JLabel();
-        jDateChooser3 = new com.toedter.calendar.JDateChooser();
+        enddate = new com.toedter.calendar.JDateChooser();
         jLabel21 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox();
+        rosterWard = new javax.swing.JComboBox();
         jButton10 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         ulable = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -229,6 +234,11 @@ public class MDIForm extends javax.swing.JFrame {
         nurseDelete.setText("Delete");
 
         nurseReset.setText("Reset");
+        nurseReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nurseResetActionPerformed(evt);
+            }
+        });
 
         jLabel14.setText("Ward Name :");
 
@@ -337,7 +347,7 @@ public class MDIForm extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(283, Short.MAX_VALUE))
+                .addContainerGap(295, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Staff Nurse Registration", jPanel1);
@@ -354,15 +364,15 @@ public class MDIForm extends javax.swing.JFrame {
         shiftcomment.setRows(5);
         jScrollPane4.setViewportView(shiftcomment);
 
-        jButton5.setText("Add");
+        shift_Add.setText("Add");
 
-        jButton6.setText("Update");
+        shift_update.setText("Update");
 
-        jButton7.setText("Delete");
+        shift_delete.setText("Delete");
 
-        jButton8.setText("Reset");
+        shift_reset.setText("Reset");
 
-        jButton17.setText("Search");
+        shift_search.setText("Search");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -376,15 +386,15 @@ public class MDIForm extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(shiftName, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton5)
+                        .addComponent(shift_Add)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton6)
+                        .addComponent(shift_update)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton7)
+                        .addComponent(shift_delete)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton17)
+                        .addComponent(shift_search)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton8)))
+                        .addComponent(shift_reset)))
                 .addGap(65, 65, 65)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel11)
@@ -417,29 +427,29 @@ public class MDIForm extends javax.swing.JFrame {
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton5)
-                            .addComponent(jButton6)
-                            .addComponent(jButton7)
-                            .addComponent(jButton17)
-                            .addComponent(jButton8))
+                            .addComponent(shift_Add)
+                            .addComponent(shift_update)
+                            .addComponent(shift_delete)
+                            .addComponent(shift_search)
+                            .addComponent(shift_reset))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
                             .addComponent(shiftName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(337, Short.MAX_VALUE))
+                .addContainerGap(349, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Shift stages", jPanel4);
 
-        jButton11.setText("Add");
+        req_Add.setText("Add");
 
-        jButton12.setText("Update");
+        req_Update.setText("Update");
 
-        jButton13.setText("Delete");
+        req_Delete.setText("Delete");
 
-        jButton14.setText("Search");
+        req_Search.setText("Search");
 
-        jButton15.setText("Reset");
+        req_reset.setText("Reset");
 
         jLabel22.setText("Select the Category \nyou want :");
 
@@ -463,15 +473,15 @@ public class MDIForm extends javax.swing.JFrame {
                     .addComponent(jLabel36)
                     .addComponent(jLabel24)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jButton11)
+                        .addComponent(req_Add)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton12)
+                        .addComponent(req_Update)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton13)
+                        .addComponent(req_Delete)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton14)
+                        .addComponent(req_Search)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton15)
+                        .addComponent(req_reset)
                         .addGap(70, 70, 70)
                         .addComponent(jLabel22)))
                 .addGap(24, 24, 24)
@@ -497,11 +507,11 @@ public class MDIForm extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton11)
-                    .addComponent(jButton12)
-                    .addComponent(jButton13)
-                    .addComponent(jButton14)
-                    .addComponent(jButton15)
+                    .addComponent(req_Add)
+                    .addComponent(req_Update)
+                    .addComponent(req_Delete)
+                    .addComponent(req_Search)
+                    .addComponent(req_reset)
                     .addComponent(jLabel22)
                     .addComponent(requestType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel23)
@@ -517,22 +527,22 @@ public class MDIForm extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel36)
                     .addComponent(requestWard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(316, Short.MAX_VALUE))
+                .addContainerGap(328, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Staff Requests", jPanel6);
 
-        jButton18.setText("Add");
+        con_Add.setText("Add");
 
-        jButton19.setText("Update");
+        con_update.setText("Update");
 
-        jButton20.setText("Delete");
+        con_delete.setText("Delete");
 
         jLabel26.setText("Previous Shift :");
 
-        jButton21.setText("Search");
+        con_search.setText("Search");
 
-        jButton22.setText("Reset");
+        con_reset.setText("Reset");
 
         jLabel27.setText("Next Shift :");
 
@@ -542,23 +552,23 @@ public class MDIForm extends javax.swing.JFrame {
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton18)
+                .addComponent(con_Add)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton19)
+                .addComponent(con_update)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton20)
+                .addComponent(con_delete)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton21)
+                .addComponent(con_search)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton22)
+                .addComponent(con_reset)
                 .addGap(47, 47, 47)
                 .addComponent(jLabel26)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(previous, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel27)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(684, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -566,33 +576,35 @@ public class MDIForm extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton18)
-                    .addComponent(jButton19)
-                    .addComponent(jButton20)
+                    .addComponent(con_Add)
+                    .addComponent(con_update)
+                    .addComponent(con_delete)
                     .addComponent(jLabel26)
-                    .addComponent(jButton21)
-                    .addComponent(jButton22)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(con_search)
+                    .addComponent(con_reset)
+                    .addComponent(previous, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel27)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(397, Short.MAX_VALUE))
+                    .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(409, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Consecutive shifts Iinitialize", jPanel7);
 
-        jButton23.setText("Add");
+        IS_add.setText("Add");
 
-        jButton24.setText("Update");
+        IS_update.setText("Update");
 
-        jButton25.setText("Delete");
+        IS_delete.setText("Delete");
 
         jLabel28.setText("Nurse Id :");
 
-        jButton26.setText("Search");
+        IS_search.setText("Search");
 
-        jButton27.setText("Reset");
+        IS_Reset.setText("Reset");
 
         jLabel29.setText("Shift :");
+
+        jLabel37.setText("Ward Name :");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -600,23 +612,28 @@ public class MDIForm extends javax.swing.JFrame {
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton23)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton24)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton25)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton26)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel37)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(IS_add)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(IS_update)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(IS_delete)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(IS_search)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(IS_Reset)
+                        .addGap(53, 53, 53)
+                        .addComponent(jLabel28)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton27)
-                .addGap(53, 53, 53)
-                .addComponent(jLabel28)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(IS_nurseId, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE)
+                    .addComponent(IS_ward, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel29)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(IS_shift, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(713, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
@@ -624,33 +641,39 @@ public class MDIForm extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton23)
-                    .addComponent(jButton24)
-                    .addComponent(jButton25)
-                    .addComponent(jButton26)
-                    .addComponent(jButton27)
+                    .addComponent(IS_add)
+                    .addComponent(IS_update)
+                    .addComponent(IS_delete)
+                    .addComponent(IS_search)
+                    .addComponent(IS_Reset)
                     .addComponent(jLabel28)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(IS_nurseId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel29)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(397, Short.MAX_VALUE))
+                    .addComponent(IS_shift, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel37)
+                    .addComponent(IS_ward, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(371, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("InValid Shifts", jPanel8);
 
-        jButton28.setText("Add");
+        ID_Add.setText("Add");
 
-        jButton29.setText("Update");
+        ID_Update.setText("Update");
 
-        jButton30.setText("Delete");
+        ID_Delete.setText("Delete");
 
-        jButton31.setText("Search");
+        ID_Search.setText("Search");
 
-        jButton32.setText("Reset");
+        ID_Reset.setText("Reset");
 
         jLabel30.setText("Nurse Id :");
 
         jLabel31.setText("Date :");
+
+        jLabel38.setText("Ward Name :");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -658,24 +681,29 @@ public class MDIForm extends javax.swing.JFrame {
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton28)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton29)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton30)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel38)
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addComponent(ID_Add)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ID_Update)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ID_Delete)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(ID_Search)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(ID_Reset)
+                        .addGap(59, 59, 59)
+                        .addComponent(jLabel30)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton31)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton32)
-                .addGap(59, 59, 59)
-                .addComponent(jLabel30)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(ID_nurseId, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                    .addComponent(ID_ward, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(28, 28, 28)
                 .addComponent(jLabel31)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jDateChooser5, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(741, Short.MAX_VALUE))
+                .addComponent(ID_date, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(717, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -683,16 +711,20 @@ public class MDIForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton28)
-                        .addComponent(jButton29)
-                        .addComponent(jButton30)
-                        .addComponent(jButton31)
-                        .addComponent(jButton32)
+                        .addComponent(ID_Add)
+                        .addComponent(ID_Update)
+                        .addComponent(ID_Delete)
+                        .addComponent(ID_Search)
+                        .addComponent(ID_Reset)
                         .addComponent(jLabel30)
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ID_nurseId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel31))
-                    .addComponent(jDateChooser5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(397, Short.MAX_VALUE))
+                    .addComponent(ID_date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel38)
+                    .addComponent(ID_ward, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(371, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Invalid Days", jPanel9);
@@ -796,7 +828,7 @@ public class MDIForm extends javax.swing.JFrame {
                     .addComponent(jButton9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(306, Short.MAX_VALUE))
+                .addContainerGap(318, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Wards", jPanel10);
@@ -854,7 +886,7 @@ public class MDIForm extends javax.swing.JFrame {
                     .addComponent(skillId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel16)
                     .addComponent(skillType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(397, Short.MAX_VALUE))
+                .addContainerGap(409, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Skills", jPanel11);
@@ -898,16 +930,16 @@ public class MDIForm extends javax.swing.JFrame {
                     .addComponent(jLabel34, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jComboBox6, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox8, 0, 152, Short.MAX_VALUE))
+                    .addComponent(staffShitName, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(staffSkill, 0, 152, Short.MAX_VALUE))
                 .addGap(39, 39, 39)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel33)
                     .addComponent(jLabel35))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(staffWard, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(staffMin, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(562, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -916,9 +948,9 @@ public class MDIForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel32)
-                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(staffShitName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel33)
-                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(staffWard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton34)
                     .addComponent(jButton35)
                     .addComponent(jButton36)
@@ -927,10 +959,10 @@ public class MDIForm extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel34)
-                    .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(staffSkill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel35)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(354, Short.MAX_VALUE))
+                    .addComponent(staffMin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(366, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Staff Levels", jPanel3);
@@ -976,7 +1008,9 @@ public class MDIForm extends javax.swing.JFrame {
 
         jLabel21.setText("Ward Name :");
 
-        jButton10.setText("Generate");
+        jButton10.setText("Feed Data");
+
+        jButton1.setText("Roster Generate");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -990,18 +1024,20 @@ public class MDIForm extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(startdate, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel20)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jDateChooser3, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(enddate, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel21)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(rosterWard, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
                         .addComponent(jButton10)
-                        .addGap(0, 301, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton1)
+                        .addGap(0, 172, Short.MAX_VALUE))))
             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
@@ -1016,13 +1052,14 @@ public class MDIForm extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel19)
-                    .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(startdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel20)
-                    .addComponent(jDateChooser3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enddate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel21)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton10)))
+                        .addComponent(rosterWard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton10)
+                        .addComponent(jButton1)))
                 .addGap(11, 11, 11))
         );
 
@@ -1167,6 +1204,17 @@ public class MDIForm extends javax.swing.JFrame {
         AdminUser admin=new AdminUser();
         admin.addNurse(employee);
     }//GEN-LAST:event_nurseAddActionPerformed
+
+    private void nurseResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nurseResetActionPerformed
+        nurseid.setText("");
+        nursename.setText("");
+        nursenic.setText("");
+        wardNames.setSelectedIndex(0);
+        nursehrs.setText("");
+        skillcombo.setSelectedIndex(0);
+        address.setText("");
+        nursedob.setCalendar(null);
+    }//GEN-LAST:event_nurseResetActionPerformed
     
     private void WardcomboBox(){
         String sql="{call WardSearch}";
@@ -1241,53 +1289,43 @@ public class MDIForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ID_Add;
+    private javax.swing.JButton ID_Delete;
+    private javax.swing.JButton ID_Reset;
+    private javax.swing.JButton ID_Search;
+    private javax.swing.JButton ID_Update;
+    private com.toedter.calendar.JDateChooser ID_date;
+    private javax.swing.JTextField ID_nurseId;
+    private javax.swing.JComboBox ID_ward;
+    private javax.swing.JButton IS_Reset;
+    private javax.swing.JButton IS_add;
+    private javax.swing.JButton IS_delete;
+    private javax.swing.JTextField IS_nurseId;
+    private javax.swing.JButton IS_search;
+    private javax.swing.JComboBox IS_shift;
+    private javax.swing.JButton IS_update;
+    private javax.swing.JComboBox IS_ward;
     private com.toedter.calendar.JDateChooser RequestDate;
     private javax.swing.JTextField RequestNurseId;
     private javax.swing.JButton SkillReset;
     private javax.swing.JButton SkillSearch;
     private javax.swing.JButton SkillUpdate;
     private javax.swing.JTextArea address;
+    private javax.swing.JButton con_Add;
+    private javax.swing.JButton con_delete;
+    private javax.swing.JButton con_reset;
+    private javax.swing.JButton con_search;
+    private javax.swing.JButton con_update;
+    private com.toedter.calendar.JDateChooser enddate;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
-    private javax.swing.JButton jButton32;
     private javax.swing.JButton jButton33;
     private javax.swing.JButton jButton34;
     private javax.swing.JButton jButton35;
     private javax.swing.JButton jButton36;
     private javax.swing.JButton jButton37;
     private javax.swing.JButton jButton38;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox jComboBox2;
-    private javax.swing.JComboBox jComboBox5;
-    private javax.swing.JComboBox jComboBox6;
-    private javax.swing.JComboBox jComboBox7;
-    private javax.swing.JComboBox jComboBox8;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
-    private com.toedter.calendar.JDateChooser jDateChooser3;
-    private com.toedter.calendar.JDateChooser jDateChooser5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1318,6 +1356,8 @@ public class MDIForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1350,11 +1390,7 @@ public class MDIForm extends javax.swing.JFrame {
     public javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField next;
     private javax.swing.JButton nurseAdd;
     private javax.swing.JButton nurseDelete;
     private javax.swing.JButton nurseReset;
@@ -1365,11 +1401,23 @@ public class MDIForm extends javax.swing.JFrame {
     private javax.swing.JTextField nurseid;
     private javax.swing.JTextField nursename;
     private javax.swing.JTextField nursenic;
+    private javax.swing.JTextField previous;
+    private javax.swing.JButton req_Add;
+    private javax.swing.JButton req_Delete;
+    private javax.swing.JButton req_Search;
+    private javax.swing.JButton req_Update;
+    private javax.swing.JButton req_reset;
     private javax.swing.JComboBox requestType;
     private javax.swing.JComboBox requestWard;
+    private javax.swing.JComboBox rosterWard;
     private javax.swing.JTextField shiftId;
     private javax.swing.JTextField shiftName;
     private javax.swing.JComboBox shiftNames;
+    private javax.swing.JButton shift_Add;
+    private javax.swing.JButton shift_delete;
+    private javax.swing.JButton shift_reset;
+    private javax.swing.JButton shift_search;
+    private javax.swing.JButton shift_update;
     private javax.swing.JTextArea shiftcomment;
     private javax.swing.JTextField shifthrs;
     private javax.swing.JButton skillAdd;
@@ -1377,6 +1425,11 @@ public class MDIForm extends javax.swing.JFrame {
     private javax.swing.JTextField skillId;
     private javax.swing.JTextField skillType;
     private javax.swing.JComboBox skillcombo;
+    private javax.swing.JTextField staffMin;
+    private javax.swing.JComboBox staffShitName;
+    private javax.swing.JComboBox staffSkill;
+    private javax.swing.JComboBox staffWard;
+    private com.toedter.calendar.JDateChooser startdate;
     public static javax.swing.JLabel ulable;
     private javax.swing.JButton wardAdd;
     private javax.swing.JButton wardDelete;
