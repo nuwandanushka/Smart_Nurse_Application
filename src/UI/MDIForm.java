@@ -73,6 +73,8 @@ public class MDIForm extends javax.swing.JFrame {
         nursedob = new com.toedter.calendar.JDateChooser();
         jLabel8 = new javax.swing.JLabel();
         nursenic = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
+        gender = new javax.swing.JComboBox();
         jPanel4 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         shiftId = new javax.swing.JTextField();
@@ -230,6 +232,11 @@ public class MDIForm extends javax.swing.JFrame {
         });
 
         nurseUpdate.setText("Update");
+        nurseUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nurseUpdateActionPerformed(evt);
+            }
+        });
 
         nurseDelete.setText("Delete");
 
@@ -249,6 +256,11 @@ public class MDIForm extends javax.swing.JFrame {
         });
 
         nurseSearch.setText("Search");
+        nurseSearch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nurseSearchActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("DOB :");
 
@@ -257,6 +269,10 @@ public class MDIForm extends javax.swing.JFrame {
         nursedob.setMinSelectableDate(new java.util.Date(-62135785692000L));
 
         jLabel8.setText("NIC :");
+
+        jLabel39.setText("Gender :");
+
+        gender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Male", "Female" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -300,14 +316,21 @@ public class MDIForm extends javax.swing.JFrame {
                         .addComponent(jLabel4)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nursedob, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(nursename, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel8)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(nursehrs, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel39))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(nursename, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(36, 36, 36)
+                                .addComponent(jLabel8)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(nursenic, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(nursehrs, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nursedob, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(nursenic, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(gender, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(320, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -323,12 +346,19 @@ public class MDIForm extends javax.swing.JFrame {
                             .addComponent(nursename, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8)
                             .addComponent(nursenic, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(skillcombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel7)
-                            .addComponent(nursehrs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel5)
+                                    .addComponent(skillcombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel7)
+                                    .addComponent(nursehrs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(26, 26, 26)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel39)
+                                    .addComponent(gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(nursedob, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1200,7 +1230,8 @@ public class MDIForm extends javax.swing.JFrame {
 
     private void nurseAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nurseAddActionPerformed
         Employee employee=new Employee(Integer.parseInt(nurseid.getText()),nursename.getText(), address.getText(), nursenic.getText()
-                , nursedob.getDate(), (String)skillcombo.getSelectedItem(), Integer.parseInt(nursehrs.getText()), (String)wardNames.getSelectedItem());
+                , nursedob.getDate(), (String)skillcombo.getSelectedItem(), Integer.parseInt(nursehrs.getText()),
+                (String)wardNames.getSelectedItem(),(String)gender.getSelectedItem());
         AdminUser admin=new AdminUser();
         admin.addNurse(employee);
     }//GEN-LAST:event_nurseAddActionPerformed
@@ -1215,6 +1246,18 @@ public class MDIForm extends javax.swing.JFrame {
         address.setText("");
         nursedob.setCalendar(null);
     }//GEN-LAST:event_nurseResetActionPerformed
+
+    private void nurseUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nurseUpdateActionPerformed
+         Employee employee=new Employee(Integer.parseInt(nurseid.getText()),nursename.getText(), address.getText(), nursenic.getText()
+                , nursedob.getDate(), (String)skillcombo.getSelectedItem(), Integer.parseInt(nursehrs.getText()),
+                (String)wardNames.getSelectedItem(),(String)gender.getSelectedItem());
+        AdminUser admin=new AdminUser();
+        admin.updateNurse(employee);
+    }//GEN-LAST:event_nurseUpdateActionPerformed
+
+    private void nurseSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nurseSearchActionPerformed
+        
+    }//GEN-LAST:event_nurseSearchActionPerformed
     
     private void WardcomboBox(){
         String sql="{call WardSearch}";
@@ -1317,6 +1360,7 @@ public class MDIForm extends javax.swing.JFrame {
     private javax.swing.JButton con_search;
     private javax.swing.JButton con_update;
     private com.toedter.calendar.JDateChooser enddate;
+    private javax.swing.JComboBox gender;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton33;
@@ -1358,6 +1402,7 @@ public class MDIForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

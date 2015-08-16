@@ -21,6 +21,7 @@ public class Employee {
     private String skillType;
     private int hourseOfWorkInMonth;
     private String wardName;
+    private String gender;
     // Joined Fields /////
     private Skill skill;
     private InValidDay inValidDay;
@@ -30,7 +31,7 @@ public class Employee {
     /**
      * @return the employeeId
      */
-    public Employee(int id, String name, String address, String nic, Date dob, String sType, int hours, String ward){
+    public Employee(int id, String name, String address, String nic, Date dob, String sType, int hours, String ward, String gender){
         this.employeeId=id;
         this.empName=name;
         this.address=address;
@@ -39,7 +40,9 @@ public class Employee {
         this.skillType=sType;
         this.hourseOfWorkInMonth=hours;
         this.wardName=ward;
+        this.gender=gender;
     }
+    public Employee(){}
     public int getEmployeeId() {
         return employeeId;
     }
@@ -189,6 +192,20 @@ public class Employee {
      */
     public void setWardName(String wardName) {
         this.wardName = wardName;
+    }
+
+    /**
+     * @return the gender
+     */
+    public String getGender() {
+        return gender;
+    }
+
+    /**
+     * @param gender the gender to set
+     */
+    public void setGender(String gender) {
+        this.gender = gender;
     }
              
 }
